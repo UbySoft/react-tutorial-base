@@ -4,6 +4,7 @@ import Articolo from "./Articolo";
 
 //Funzione che se presente 'Theme' nel localStorage
 const getFromLocalStorage=() => {
+  console.log("TEST")
   if(localStorage.getItem('theme')){
     return localStorage.getItem("theme");
   }else{
@@ -17,6 +18,7 @@ function App() {
 
   //funzione che cambia il tema a seconda del suo valore
   const cambiaTema = () => {
+    
     if (theme === "ligth-mode") {
       setTheme("dark-mode");
     } else {
